@@ -7,11 +7,11 @@
 @interface SDWebASDKImageManager : NSObject <ASImageCacheProtocol, ASImageDownloaderProtocol>
 
 @property (nonatomic, assign) SDWebImageOptions webImageOptions;
-@property (nonatomic, strong, readonly) SDWebImageManager *webImageManager;
+@property (nonatomic, strong, readonly, nonnull) SDWebImageManager *webImageManager;
 @property (nonatomic, assign) SDWebASDKImageManagerOptions imageManagerOptions;
 
-+ (instancetype)sharedManager;
+@property (class, strong, readonly, nonnull) SDWebASDKImageManager * sharedManager;
 
-- (instancetype)initWithWebImageManager:(SDWebImageManager *)manager NS_DESIGNATED_INITIALIZER;
+- (instancetype _Nonnull )initWithWebImageManager:(SDWebImageManager* _Nonnull)manager NS_DESIGNATED_INITIALIZER;
 
 @end

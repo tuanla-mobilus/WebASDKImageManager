@@ -4,6 +4,4 @@
 
 @interface ASNetworkImageNode (WebImage)
 
-- (instancetype)initWithWebImage;
-
 @end

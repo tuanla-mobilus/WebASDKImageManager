@@ -6,8 +6,7 @@
 
 @implementation ASNetworkImageNode (WebImage)
 
-- (instancetype)initWithWebImage
-{
+- (instancetype)init {
     SDWebASDKImageManager *imageManager = [SDWebASDKImageManager sharedManager];
     return [self initWithCache:imageManager downloader:imageManager];
 }
