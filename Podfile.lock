@@ -1,22 +1,22 @@
 PODS:
-  - AsyncDisplayKit/Core (2.2)
   - SDWebImage/Core (4.0.0)
+  - Texture/Core (2.3.2)
   - WebASDKImageManager (3.0.0):
-    - AsyncDisplayKit/Core (~> 2.0)
     - SDWebImage/Core (~> 4.0)
+    - Texture/Core
 
 DEPENDENCIES:
   - WebASDKImageManager (from `.`)
 
 EXTERNAL SOURCES:
   WebASDKImageManager:
-    :path: "."
+    :path: .
 
 SPEC CHECKSUMS:
-  AsyncDisplayKit: 1585f6cd0531ae9b30476f5912f577b73ebcb0e4
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
-  WebASDKImageManager: f4d85fde2ce50e97ad697a65d0e41ca5756cb292
+  Texture: 18664254419f35de27af76399b3b265cbad5740a
+  WebASDKImageManager: f7b831293f6499695f32dd4dfe47e26d1947fa7f
 
 PODFILE CHECKSUM: 7b34a654865002f9dd598539b1b1c3d7df04a62e
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

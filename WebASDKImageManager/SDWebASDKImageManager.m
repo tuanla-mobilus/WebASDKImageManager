@@ -96,7 +96,11 @@
         }
         
         dispatch_async(callbackQueue ?: dispatch_get_main_queue(), ^{
-            completion([SDWebASDKImageContainer containerForImage:image], error, weakOperation);
+            SDWebASDKImageContainer *imageContainer = nil;
+            if (image) {
+                imageContainer = [SDWebASDKImageContainer containerForImage:image];
+            }
+            completion(imageContainer, error, weakOperation);
         });
     }];
     weakOperation = operation;
